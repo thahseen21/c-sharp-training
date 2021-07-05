@@ -1,0 +1,15 @@
+/Users/thahseen/Documents/gislen/training/day_1/Add_Division/bin/Debug/net5.0/Add_Division.deps.json
+/Users/thahseen/Documents/gislen/training/day_1/Add_Division/bin/Debug/net5.0/Add_Division.runtimeconfig.json
+/Users/thahseen/Documents/gislen/training/day_1/Add_Division/bin/Debug/net5.0/Add_Division.runtimeconfig.dev.json
+/Users/thahseen/Documents/gislen/training/day_1/Add_Division/bin/Debug/net5.0/Add_Division.dll
+/Users/thahseen/Documents/gislen/training/day_1/Add_Division/bin/Debug/net5.0/ref/Add_Division.dll
+/Users/thahseen/Documents/gislen/training/day_1/Add_Division/bin/Debug/net5.0/Add_Division.pdb
+/Users/thahseen/Documents/gislen/training/day_1/Add_Division/obj/Debug/net5.0/Add_Division.csproj.AssemblyReference.cache
+/Users/thahseen/Documents/gislen/training/day_1/Add_Division/obj/Debug/net5.0/Add_Division.GeneratedMSBuildEditorConfig.editorconfig
+/Users/thahseen/Documents/gislen/training/day_1/Add_Division/obj/Debug/net5.0/Add_Division.AssemblyInfoInputs.cache
+/Users/thahseen/Documents/gislen/training/day_1/Add_Division/obj/Debug/net5.0/Add_Division.AssemblyInfo.cs
+/Users/thahseen/Documents/gislen/training/day_1/Add_Division/obj/Debug/net5.0/Add_Division.csproj.CoreCompileInputs.cache
+/Users/thahseen/Documents/gislen/training/day_1/Add_Division/obj/Debug/net5.0/Add_Division.dll
+/Users/thahseen/Documents/gislen/training/day_1/Add_Division/obj/Debug/net5.0/ref/Add_Division.dll
+/Users/thahseen/Documents/gislen/training/day_1/Add_Division/obj/Debug/net5.0/Add_Division.pdb
+/Users/thahseen/Documents/gislen/training/day_1/Add_Division/obj/Debug/net5.0/Add_Division.genruntimeconfig.cache

@@ -1,0 +1,15 @@
+/Users/thahseen/Documents/gislen/training/day_1/ReadInputArgs/bin/Debug/net5.0/ReadInputArgs.deps.json
+/Users/thahseen/Documents/gislen/training/day_1/ReadInputArgs/bin/Debug/net5.0/ReadInputArgs.runtimeconfig.json
+/Users/thahseen/Documents/gislen/training/day_1/ReadInputArgs/bin/Debug/net5.0/ReadInputArgs.runtimeconfig.dev.json
+/Users/thahseen/Documents/gislen/training/day_1/ReadInputArgs/bin/Debug/net5.0/ReadInputArgs.dll
+/Users/thahseen/Documents/gislen/training/day_1/ReadInputArgs/bin/Debug/net5.0/ref/ReadInputArgs.dll
+/Users/thahseen/Documents/gislen/training/day_1/ReadInputArgs/bin/Debug/net5.0/ReadInputArgs.pdb
+/Users/thahseen/Documents/gislen/training/day_1/ReadInputArgs/obj/Debug/net5.0/ReadInputArgs.csproj.AssemblyReference.cache
+/Users/thahseen/Documents/gislen/training/day_1/ReadInputArgs/obj/Debug/net5.0/ReadInputArgs.GeneratedMSBuildEditorConfig.editorconfig
+/Users/thahseen/Documents/gislen/training/day_1/ReadInputArgs/obj/Debug/net5.0/ReadInputArgs.AssemblyInfoInputs.cache
+/Users/thahseen/Documents/gislen/training/day_1/ReadInputArgs/obj/Debug/net5.0/ReadInputArgs.AssemblyInfo.cs
+/Users/thahseen/Documents/gislen/training/day_1/ReadInputArgs/obj/Debug/net5.0/ReadInputArgs.csproj.CoreCompileInputs.cache
+/Users/thahseen/Documents/gislen/training/day_1/ReadInputArgs/obj/Debug/net5.0/ReadInputArgs.dll
+/Users/thahseen/Documents/gislen/training/day_1/ReadInputArgs/obj/Debug/net5.0/ref/ReadInputArgs.dll
+/Users/thahseen/Documents/gislen/training/day_1/ReadInputArgs/obj/Debug/net5.0/ReadInputArgs.pdb
+/Users/thahseen/Documents/gislen/training/day_1/ReadInputArgs/obj/Debug/net5.0/ReadInputArgs.genruntimeconfig.cache
