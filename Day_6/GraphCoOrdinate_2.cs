@@ -21,6 +21,16 @@ namespace CoOrdinate
             y += 3;
             z -= 5;
         }
+        
+        public void Move(Graph graph)
+        {
+            if(graph != null)
+            {
+                this.X = graph.X;
+                this.Y = grapth.Y;
+            }
+            
+        }
 
         public void Locate()
         {
@@ -38,6 +48,7 @@ namespace CoOrdinate
 
             obj1.Locate();
             obj1.Move(ref obj1.X, ref obj1.Y, ref obj1.Z);
+            obj1.Move(new Graph(10,5,6));            
             obj1.Locate();
 
         }
