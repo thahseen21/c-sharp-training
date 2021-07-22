@@ -1,0 +1,15 @@
+/Users/thahseen/Documents/gislen/training/day_14/EVENTSPROJECT/obj/Debug/net5.0/EVENTSPROJECT.csproj.AssemblyReference.cache
+/Users/thahseen/Documents/gislen/training/day_14/EVENTSPROJECT/obj/Debug/net5.0/EVENTSPROJECT.GeneratedMSBuildEditorConfig.editorconfig
+/Users/thahseen/Documents/gislen/training/day_14/EVENTSPROJECT/obj/Debug/net5.0/EVENTSPROJECT.AssemblyInfoInputs.cache
+/Users/thahseen/Documents/gislen/training/day_14/EVENTSPROJECT/obj/Debug/net5.0/EVENTSPROJECT.AssemblyInfo.cs
+/Users/thahseen/Documents/gislen/training/day_14/EVENTSPROJECT/obj/Debug/net5.0/EVENTSPROJECT.csproj.CoreCompileInputs.cache
+/Users/thahseen/Documents/gislen/training/day_14/EVENTSPROJECT/bin/Debug/net5.0/EVENTSPROJECT.deps.json
+/Users/thahseen/Documents/gislen/training/day_14/EVENTSPROJECT/bin/Debug/net5.0/EVENTSPROJECT.runtimeconfig.json
+/Users/thahseen/Documents/gislen/training/day_14/EVENTSPROJECT/bin/Debug/net5.0/EVENTSPROJECT.runtimeconfig.dev.json
+/Users/thahseen/Documents/gislen/training/day_14/EVENTSPROJECT/bin/Debug/net5.0/EVENTSPROJECT.dll
+/Users/thahseen/Documents/gislen/training/day_14/EVENTSPROJECT/bin/Debug/net5.0/ref/EVENTSPROJECT.dll
+/Users/thahseen/Documents/gislen/training/day_14/EVENTSPROJECT/bin/Debug/net5.0/EVENTSPROJECT.pdb
+/Users/thahseen/Documents/gislen/training/day_14/EVENTSPROJECT/obj/Debug/net5.0/EVENTSPROJECT.dll
+/Users/thahseen/Documents/gislen/training/day_14/EVENTSPROJECT/obj/Debug/net5.0/ref/EVENTSPROJECT.dll
+/Users/thahseen/Documents/gislen/training/day_14/EVENTSPROJECT/obj/Debug/net5.0/EVENTSPROJECT.pdb
+/Users/thahseen/Documents/gislen/training/day_14/EVENTSPROJECT/obj/Debug/net5.0/EVENTSPROJECT.genruntimeconfig.cache
