@@ -8,8 +8,8 @@ namespace Project
         public string Name { get; set; }
         public int Age { get; set; }
         public string BloodGroup { get; set; }
-        bool IsMedicalInsured { get; set; }
-        bool IsLifeInsured { get; set; }
+        public bool IsMedicalInsured { get; set; }
+        public bool IsLifeInsured { get; set; }
 
         private int LifeInsuranceIdRef = 1;
         private int MedInsuranceIdRef = 1;

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Project
 {
@@ -8,7 +9,7 @@ namespace Project
         public static List<ICustomerInfo> CustomerList = new List<ICustomerInfo>();
         static void Main(string[] args)
         {
-            var obj = new CustomerInfo(21, "Mohammed Thahseen", 21, "O+");
+            var obj = new CustomerInfo(21, "Mohammed Thahseen", 21, "b+");
             var customerIdRef = 1;
 
             // obj.DisplayInfo();
@@ -16,6 +17,8 @@ namespace Project
             // obj.NewLifeInsurance(21000);
             // obj.NewMedicalInsurance(20000);
             // obj.NewMedicalInsurance(20000);
+
+            obj.NewMedicalInsurance(20000);
 
             CustomerList.Add(obj);
             CustomerList.Add(new CustomerInfo(41, "Peter", 12, "b+"));
@@ -126,7 +129,21 @@ namespace Project
         }
         public static void FindBloodGroup()
         {
+            Console.WriteLine($"Enter the bloodgroup to search");
+            var bloodGroup = Console.ReadLine();
+            var result = Utils.FindBloodGroup(CustomerList, bloodGroup);
 
+            if (result.Count() > 0)
+            {
+                foreach (var customer in result)
+                {
+                    Console.WriteLine($"{customer.Name} is {bloodGroup}");
+                }
+            }
+            else
+            {
+                Console.WriteLine($"No donor");
+            }
         }
         public static void DisplayCustomer()
         {

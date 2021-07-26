@@ -17,17 +17,20 @@ namespace Project
             }
             return null;
         }
-        public static List<ICustomerInfo> FindBloodGroup(List<ICustomerInfo> customerList, string bloodGroup)
+        public static IEnumerable<ICustomerInfo> FindBloodGroup(List<ICustomerInfo> customerList, string bloodGroup)
         {
-            // List<ICustomerInfo> NewCustomerList = new List<ICustomerInfo>();
-            // foreach (var customer in customerList)
-            // {
+            List<ICustomerInfo> NewCustomerList = new List<ICustomerInfo>();
 
-            // }
-            // NewCustomerList = from customer in customerList
-            //                   where customer.BloodGroup equals bloodGroup
-            //                   select customer;
-            // return NewCustomerList;
+
+            var data = from item in customerList
+                       where item.BloodGroup.ToLower().Contains(bloodGroup)
+                       where item.IsMedicalInsured == true
+                       select item;
+            foreach (var item in data)
+            {
+                Console.WriteLine($"item:{item.Name}");
+            }
+            return data;
         }
     }
 }
