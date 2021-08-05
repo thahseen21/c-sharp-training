@@ -1,0 +1,15 @@
+/Users/thahseen/Documents/gislen/training/Day_24/DataStructure/bin/Debug/net5.0/DataStructure.deps.json
+/Users/thahseen/Documents/gislen/training/Day_24/DataStructure/bin/Debug/net5.0/DataStructure.runtimeconfig.json
+/Users/thahseen/Documents/gislen/training/Day_24/DataStructure/bin/Debug/net5.0/DataStructure.runtimeconfig.dev.json
+/Users/thahseen/Documents/gislen/training/Day_24/DataStructure/bin/Debug/net5.0/DataStructure.dll
+/Users/thahseen/Documents/gislen/training/Day_24/DataStructure/bin/Debug/net5.0/ref/DataStructure.dll
+/Users/thahseen/Documents/gislen/training/Day_24/DataStructure/bin/Debug/net5.0/DataStructure.pdb
+/Users/thahseen/Documents/gislen/training/Day_24/DataStructure/obj/Debug/net5.0/DataStructure.csproj.AssemblyReference.cache
+/Users/thahseen/Documents/gislen/training/Day_24/DataStructure/obj/Debug/net5.0/DataStructure.GeneratedMSBuildEditorConfig.editorconfig
+/Users/thahseen/Documents/gislen/training/Day_24/DataStructure/obj/Debug/net5.0/DataStructure.AssemblyInfoInputs.cache
+/Users/thahseen/Documents/gislen/training/Day_24/DataStructure/obj/Debug/net5.0/DataStructure.AssemblyInfo.cs
+/Users/thahseen/Documents/gislen/training/Day_24/DataStructure/obj/Debug/net5.0/DataStructure.csproj.CoreCompileInputs.cache
+/Users/thahseen/Documents/gislen/training/Day_24/DataStructure/obj/Debug/net5.0/DataStructure.dll
+/Users/thahseen/Documents/gislen/training/Day_24/DataStructure/obj/Debug/net5.0/ref/DataStructure.dll
+/Users/thahseen/Documents/gislen/training/Day_24/DataStructure/obj/Debug/net5.0/DataStructure.pdb
+/Users/thahseen/Documents/gislen/training/Day_24/DataStructure/obj/Debug/net5.0/DataStructure.genruntimeconfig.cache
