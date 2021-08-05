@@ -8,7 +8,6 @@ function FetchData() {
     request.addEventListener('readystatechange', (e) => {
         if (e.target.readyState === 4) {
             const response = JSON.parse(e.target.responseText)
-            console.log(data.data)
             this.data = response
             for (let employee of response.data) {
                 AddElementToHTML(employee)
@@ -21,8 +20,7 @@ function FetchData() {
 }
 
 function AddElementToHTML(data) {
-    console.log(data)
-    let tag = `<div class="card-view">
+    let tag = `<div class="card-view" onclick="FetchUserDetail(${data.id})">
     <img src=${data.avatar} />
     <div class="details-wrapper">
       <p>${data.first_name}</p>
@@ -32,5 +30,31 @@ function AddElementToHTML(data) {
     let container = document.getElementById('employee-containers');
 
     container.insertAdjacentHTML('beforeend', tag)
+}
 
+async function FetchUserDetail(data) {
+    const response = await fetch(`https://reqres.in/api/users/${data}`, { method: 'get' });
+    const parsedData = await response.json();
+    if (response.status === 200) {
+        ShowUserData(parsedData.data)
+    }
+}
+
+function ShowUserData(data) {
+    let tag = `<div class="backdrop" id="backdrop" onclick="CloseUserData(this)">
+    <div class="pop-up">
+      <img src="${data.avatar}" />
+      <div class="details-wrapper">
+        <p>${data.first_name}</p>
+        <p>${data.email}</p>
+      </div>
+    </div>
+  </div>`
+    let container = document.getElementById('employee-containers');
+
+    container.insertAdjacentHTML('beforeend', tag)
+}
+
+function CloseUserData(data) {
+    data.remove()
 }
