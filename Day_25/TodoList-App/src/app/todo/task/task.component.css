@@ -1,13 +1,26 @@
 .task-container {
   display: flex;
   background-color: azure;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  align-self: center;
-  width: 90%;
+  /* justify-content: space-around; */
+  margin-top: 10px;
 }
 
 .task {
   display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 0px 10px;
+}
+
+.task input {
+  flex: 0.2;
+}
+
+.task p {
+  flex: 4;
+  margin-left: 10px;
+}
+
+.task button {
+  flex: 1;
 }

@@ -22,10 +22,14 @@
   flex: 5;
   justify-content: center;
   width: 100%;
+  overflow: auto;
 }
 
 .input-wrapper {
-  background-color: grey;
+  background-color: rgb(122, 97, 97);
   width: 100%;
+  display: flex;
   flex: 1;
+  justify-content: space-around;
+  align-items: center;
 }
