@@ -5,4 +5,8 @@ import { Component } from '@angular/core';
   templateUrl: './input.component.html',
   styleUrls: ['./input.component.css'],
 })
-export class TodoInput {}
+export class TodoInput {
+  getTodo(value: string) {
+    console.log(value);
+  }
+}

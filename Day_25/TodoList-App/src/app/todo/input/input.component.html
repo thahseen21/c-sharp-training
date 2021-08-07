@@ -1,2 +1,2 @@
-<input class="add-todo" type="text" />
+<input class="add-todo" type="text" #todo (keyup)="getTodo(todo.value)" />
 <button>Add</button>
