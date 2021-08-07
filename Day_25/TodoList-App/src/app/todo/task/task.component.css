@@ -1,0 +1,13 @@
+.task-container {
+  display: flex;
+  background-color: azure;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  width: 90%;
+}
+
+.task {
+  display: flex;
+}
