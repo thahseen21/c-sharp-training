@@ -1,4 +1,5 @@
-import { Component, Input } from '@angular/core';
+import { formatPercent } from '@angular/common';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'todo-task',
@@ -7,4 +8,21 @@ import { Component, Input } from '@angular/core';
 })
 export class TodoTask {
   @Input() todoList: any;
+
+  taskCompleteToggler(key: number) {
+    for (let todo of this.todoList) {
+      if (todo.key === key) {
+        todo.isOver = !todo.isOver;
+        console.log(todo);
+      }
+    }
+  }
+
+  removeTask(key: number) {
+    this.todoList.map((todo: any, index: number) => {
+      if (todo.key === key) {
+        this.todoList.splice(index, 1);
+      }
+    });
+  }
 }
