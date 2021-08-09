@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Information</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./script.js"></script>
+</head>
+
+<body>
+    <div>
+        <h1>Student Information</h1>
+        <form id="form">
+            <div class="input">
+                <label>Name :</label>
+                <input placeholder="Full Name" id="fullName" name="fullName" />
+                <h4 id="fullNameCheck">Please enter a valid name</h4>
+            </div>
+            <div class="input">
+                <label>Gender :</label>
+                <input type="radio" name="gender" id="gender" />
+                <label>Male</label>
+                <input type="radio" name="gender" id="gender" />
+                <label>Female</label>
+                <h4 id="genderCheck">please select a gender</h4>
+            </div>
+            <div class="input">
+                <label>Date of Birth:</label>
+                <input type="date" id="dob" />
+                <h4 id="dobCheck">Please enter your dob</h4>
+            </div>
+            <div class="input">
+                <label>Address:</label>
+                <input type="text" minlength="20" maxlength="100" placeholder="Address 100 character" id="address" />
+                <h4 id="addressCheck">Please enter your residing address</h4>
+            </div>
+            <input type="submit" />
+        </form>
+    </div>
+    <div class="display-student" id="student">
+        <button onclick="DisplayStudents()">display the students</button>
+    </div>
+</body>
+
+</html>
