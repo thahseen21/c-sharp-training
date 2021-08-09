@@ -1,0 +1,16 @@
+C:\Users\mohammedthahseenn\Documents\Training\c-sharp\Day_26\EncodingOfString\bin\Debug\net5.0\EncodingOfString.exe
+C:\Users\mohammedthahseenn\Documents\Training\c-sharp\Day_26\EncodingOfString\bin\Debug\net5.0\EncodingOfString.deps.json
+C:\Users\mohammedthahseenn\Documents\Training\c-sharp\Day_26\EncodingOfString\bin\Debug\net5.0\EncodingOfString.runtimeconfig.json
+C:\Users\mohammedthahseenn\Documents\Training\c-sharp\Day_26\EncodingOfString\bin\Debug\net5.0\EncodingOfString.runtimeconfig.dev.json
+C:\Users\mohammedthahseenn\Documents\Training\c-sharp\Day_26\EncodingOfString\bin\Debug\net5.0\EncodingOfString.dll
+C:\Users\mohammedthahseenn\Documents\Training\c-sharp\Day_26\EncodingOfString\bin\Debug\net5.0\ref\EncodingOfString.dll
+C:\Users\mohammedthahseenn\Documents\Training\c-sharp\Day_26\EncodingOfString\bin\Debug\net5.0\EncodingOfString.pdb
+C:\Users\mohammedthahseenn\Documents\Training\c-sharp\Day_26\EncodingOfString\obj\Debug\net5.0\EncodingOfString.csproj.AssemblyReference.cache
+C:\Users\mohammedthahseenn\Documents\Training\c-sharp\Day_26\EncodingOfString\obj\Debug\net5.0\EncodingOfString.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mohammedthahseenn\Documents\Training\c-sharp\Day_26\EncodingOfString\obj\Debug\net5.0\EncodingOfString.AssemblyInfoInputs.cache
+C:\Users\mohammedthahseenn\Documents\Training\c-sharp\Day_26\EncodingOfString\obj\Debug\net5.0\EncodingOfString.AssemblyInfo.cs
+C:\Users\mohammedthahseenn\Documents\Training\c-sharp\Day_26\EncodingOfString\obj\Debug\net5.0\EncodingOfString.csproj.CoreCompileInputs.cache
+C:\Users\mohammedthahseenn\Documents\Training\c-sharp\Day_26\EncodingOfString\obj\Debug\net5.0\EncodingOfString.dll
+C:\Users\mohammedthahseenn\Documents\Training\c-sharp\Day_26\EncodingOfString\obj\Debug\net5.0\ref\EncodingOfString.dll
+C:\Users\mohammedthahseenn\Documents\Training\c-sharp\Day_26\EncodingOfString\obj\Debug\net5.0\EncodingOfString.pdb
+C:\Users\mohammedthahseenn\Documents\Training\c-sharp\Day_26\EncodingOfString\obj\Debug\net5.0\EncodingOfString.genruntimeconfig.cache
