@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./todo.component.css'],
 })
 export class TodoComponent {
-  currentItem = 'Television';
+  todoList = [{ todo: 'potato', isOver: false }];
+
+  newTodo = '';
+
+  receiveNewTodo($event: string) {
+    console.log('in todo component', $event);
+    this.newTodo = $event;
+  }
 }
