@@ -1,0 +1,30 @@
+.task-container {
+  display: flex;
+  background-color: azure;
+  margin-top: 10px;
+}
+
+.task {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 0px 10px;
+  /* background-color: pink; */
+}
+
+.task input {
+  flex: 0.2;
+}
+
+.task p {
+  flex: 4;
+  margin-left: 10px;
+}
+
+.task button {
+  flex: 1;
+}
+
+.task-completed {
+  background-color: rgba(0, 255, 0, 0.2);
+}

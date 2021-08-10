@@ -1,0 +1,19 @@
+.total-task {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  /* background-color: pink; */
+  box-shadow: 2px 0px 20px 0px #00000033;
+}
+.total-task h3 {
+  margin-right: 10px;
+}
+.remain-task h3 {
+  margin-right: 10px;
+}
+.remain-task {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  /* background-color: aqua; */
+}
