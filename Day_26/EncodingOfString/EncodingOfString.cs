@@ -23,10 +23,6 @@ namespace EncodingOfString
                         encodedText.Append(count.ToString() + currentChar);
                         count = 1;
                     }
-                    // else if (input.Length == j)
-                    // {
-                    //     encodedText.Append(count.ToString() + currentChar);
-                    // }
                     else
                     {
                         encodedText.Append(currentChar);

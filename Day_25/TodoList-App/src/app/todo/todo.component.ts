@@ -6,11 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./todo.component.css'],
 })
 export class TodoComponent {
-  todoList = [
-    { todo: 'potato', isOver: false, key: 1 },
-    { todo: 'another potato', isOver: true, key: 2 },
-  ];
-
+  // todoList = [
+  //   // { todo: 'potato', isOver: false, key: 1 },
+  //   // { todo: 'another potato', isOver: true, key: 2 },
+  // ];
+  todoList = Array<{ todo: string; isOver: boolean; key: number }>();
   newTodo = '';
   key = 2;
 
