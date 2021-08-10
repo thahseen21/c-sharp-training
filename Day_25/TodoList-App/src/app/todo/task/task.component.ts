@@ -13,7 +13,6 @@ export class TodoTask {
     for (let todo of this.todoList) {
       if (todo.key === key) {
         todo.isOver = !todo.isOver;
-        console.log(todo);
       }
     }
   }
@@ -22,6 +21,7 @@ export class TodoTask {
     this.todoList.map((todo: any, index: number) => {
       if (todo.key === key) {
         this.todoList.splice(index, 1);
+        localStorage.setItem('todoList', JSON.stringify(this.todoList));
       }
     });
   }

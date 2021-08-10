@@ -14,8 +14,14 @@ export class TodoComponent {
   newTodo = '';
   key = 2;
 
+  constructor() {
+    let data = localStorage.getItem('todoList');
+    if (data) {
+      this.todoList = JSON.parse(data);
+    }
+  }
+
   receiveNewTodo($event: string) {
-    console.log('in todo component', $event);
     this.newTodo = $event;
     if (this.newTodo.length > 0) {
       this.todoList.push({
@@ -24,6 +30,7 @@ export class TodoComponent {
         key: ++this.key,
       });
       this.newTodo = '';
+      localStorage.setItem('todoList', JSON.stringify(this.todoList));
     }
   }
 }
