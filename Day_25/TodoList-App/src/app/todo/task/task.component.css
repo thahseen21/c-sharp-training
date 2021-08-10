@@ -26,5 +26,5 @@
 }
 
 .task-completed {
-  background-color: green;
+  background-color: rgba(0, 255, 0, 0.2);
 }

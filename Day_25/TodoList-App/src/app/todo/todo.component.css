@@ -3,22 +3,27 @@
   width: 50%;
   height: 60%;
   left: calc(100% - 75%);
+  top: 10%;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 5px 20px 0px #00000033;
 }
 
 .header-wrapper {
-  background-color: aliceblue;
+  /* background-color: aliceblue; */
   width: 100%;
   flex: 1;
   display: flex;
   justify-content: space-around;
+  box-shadow: 0px 2px 20px 0px #00000033;
 }
 
 .task-wrapper {
-  background-color: antiquewhite;
+  /* background-color: antiquewhite; */
   flex: 5;
   justify-content: center;
   width: 100%;
@@ -26,7 +31,7 @@
 }
 
 .input-wrapper {
-  background-color: rgb(122, 97, 97);
+  /* background-color: rgb(122, 97, 97); */
   width: 100%;
   display: flex;
   flex: 1;
