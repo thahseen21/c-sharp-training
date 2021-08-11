@@ -1,15 +1,22 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-display-student',
   templateUrl: './display-student.component.html',
-  styleUrls: ['./display-student.component.css']
+  styleUrls: ['./display-student.component.css'],
 })
-export class DisplayStudentComponent implements OnInit {
+export class DisplayStudentComponent {
+  constructor() {}
 
-  constructor() { }
+  @Input() studentList: any;
 
-  ngOnInit(): void {
+  showStudent: boolean = false;
+
+  displayStudent(): void {
+    this.showStudent = !this.showStudent;
   }
 
+  ToggleIsActive(index: number): void {
+    this.studentList[index].isActive = !this.studentList[index].isActive;
+  }
 }

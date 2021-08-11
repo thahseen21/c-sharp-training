@@ -1,4 +1,13 @@
 <div class="app-wrapper">
-  <app-input-student></app-input-student>
-  <app-display-student></app-display-student>
+  <!-- text interpolation-->
+  <h4>{{ header }}</h4>
+
+  <!-- passing data from child to parent via output decorator;(name_of_the_event_from_child_component)="function_Name_In_parent_component" ;custom event binding -->
+  <app-input-student
+    (addNewStudentEvent)="addNewStudent($event)"
+  ></app-input-student>
+
+  <!-- passing data from parent to child -->
+  <!-- property binding [studentList]="studentList"-->
+  <app-display-student [studentList]="studentList"></app-display-student>
 </div>
