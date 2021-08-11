@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0px;
+  font-family: "Lato", sans-serif;
+}
+
+button {
+  background-color: transparent;
+  border: 1px solid rgb(122, 122, 122);
+  border-radius: 10px;
+  padding: 5px 10px;
+  box-shadow: 1px 1px 5px 0px rgb(122, 122, 122);
+}
