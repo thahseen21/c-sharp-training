@@ -1,0 +1,27 @@
+<label for="">ISB Number:</label>
+<input type="number" #isbn />
+<br />
+<label for="">Book Title:</label>
+<input type="text" #title />
+<br />
+<label for="">Description</label>
+<input type="text" #description />
+<br />
+<label for="">Author Name:</label>
+<input type="text" #author />
+<br />
+<label for="">Price:</label>
+<input type="number" id="price" #price />
+<button type="button" (click)="
+    addNewBook(
+      isbn.value,
+      title.value,
+      description.value,
+      author.value,
+      price.value
+    )
+  ">
+  Add
+</button>
+
+<!-- title.value, description.value, author.value, price.value -->
