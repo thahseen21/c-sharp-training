@@ -1,0 +1,23 @@
+.app-wrapper {
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  right: 40%;
+}
+
+.app-wrapper button {
+  padding: 15px;
+  width: 30%;
+  background-color: rgb(48, 48, 204);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: 900;
+  transition: 0.5s;
+}
+.app-wrapper button:hover {
+  background-color: rgb(5, 5, 138);
+  transition: 0.5s;
+}
