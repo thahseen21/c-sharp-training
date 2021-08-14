@@ -44,3 +44,5 @@ b. Create a book class ts file and use the object where ever required
 c. Use services to store the logics
 d. Create custom directives if required 
 e.  Use a good CSS and styling for each component 
+
+Try to include the image upload option and display it as a thumbnail  in the grid
