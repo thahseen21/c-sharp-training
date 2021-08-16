@@ -1,0 +1,35 @@
+<div class="add-book-wrapper" [formGroup]="bookForm">
+  <div class="row">
+    <label for="">ISB Number:</label>
+    <!-- <h6 >please enter a valide ISBN</h6> -->
+    <input type="number" formControlName="isbn" [minlength]="10" />
+  </div>
+  <br/>
+  <div class="row">
+    <label for="">Book Title:</label>
+    <input type="text" formControlName="title" />
+  </div>
+  <br />
+  <div class="row">
+    <label for="">Description</label>
+    <input type="text" formControlName="description" />
+  </div>
+  <br />
+  <div class="row">
+    <label for="">Author Name:</label>
+    <input type="text" formControlName="author" />
+  </div>
+  <br />
+  <div class="row">
+    <label for="">Price:</label>
+    <input type="number" formControlName="price" />
+  </div>
+  <br />
+  <div class="row">
+    <label for="">Image Url:</label>
+    <input type="file" (change)="onFileChanged($event)" #image >
+  </div>
+  <div class="add-button-wrapper">
+    <button type="button" (click)="[addNewBook(),image.value='']">Add</button>
+  </div>
+</div>
