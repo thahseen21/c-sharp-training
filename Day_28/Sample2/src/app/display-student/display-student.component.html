@@ -1,0 +1,19 @@
+<!-- event binding -->
+<button (click)="displayStudent()">Display Students</button>
+
+<!-- Structural Directives ngfor ngif ngswitch  -->
+<!-- Built-In directives ngClass ngStyle ngModel-->
+<div
+  class="display-student-container"
+  [ngClass]="showStudent ? 'display-student' : 'hide-student'"
+  *ngFor="let student of studentList; index as i"
+>
+  <!-- text interpolation-->
+  <p>{{ student.name }}</p>
+  <button [disabled]="student.isActive" (click)="ToggleIsActive(i)">
+    Enable Student
+  </button>
+  <button [disabled]="!student.isActive" (click)="ToggleIsActive(i)">
+    Disable Student
+  </button>
+</div>

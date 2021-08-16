@@ -1,0 +1,9 @@
+<input type="text" value="{{ studentName }}" (keyup)="onValueChange($event)" />
+<!-- propert binding [] -->
+<input type="radio" name="isActive" [checked]="isActive" (change)="onActiveChange()"/><label>Active</label>
+<input type="radio" name="isActive" [checked]="isInActive" (change)="onInActiveChange()" /><label>In-Active</label>
+<br />
+<br />
+<button (click)="addNewStudent()">Add Student</button>
+<br />
+<br />

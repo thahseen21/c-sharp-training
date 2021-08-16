@@ -1,0 +1,15 @@
+<div class="app-wrapper">
+  <button (click)="toggleBook()">Add Book</button>
+  <button (click)="toggleDisplay()">Display Book</button>
+</div>
+
+<app-backdrop *ngIf="isBookOpen || isDisplayOpen" (click)="closeModal()">
+</app-backdrop>
+<app-add-book
+  *ngIf="isBookOpen"
+  (addNewBookEvent)="addNewBook($event)"
+></app-add-book>
+<app-display-book
+  *ngIf="isDisplayOpen"
+  [bookList]="bookList"
+></app-display-book>

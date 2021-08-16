@@ -1,0 +1,15 @@
+/Users/thahseen/Documents/gislen/c-sharp/Day_27/FilesOperation/bin/Debug/net5.0/FilesOperation.deps.json
+/Users/thahseen/Documents/gislen/c-sharp/Day_27/FilesOperation/bin/Debug/net5.0/FilesOperation.runtimeconfig.json
+/Users/thahseen/Documents/gislen/c-sharp/Day_27/FilesOperation/bin/Debug/net5.0/FilesOperation.runtimeconfig.dev.json
+/Users/thahseen/Documents/gislen/c-sharp/Day_27/FilesOperation/bin/Debug/net5.0/FilesOperation.dll
+/Users/thahseen/Documents/gislen/c-sharp/Day_27/FilesOperation/bin/Debug/net5.0/ref/FilesOperation.dll
+/Users/thahseen/Documents/gislen/c-sharp/Day_27/FilesOperation/bin/Debug/net5.0/FilesOperation.pdb
+/Users/thahseen/Documents/gislen/c-sharp/Day_27/FilesOperation/obj/Debug/net5.0/FilesOperation.csproj.AssemblyReference.cache
+/Users/thahseen/Documents/gislen/c-sharp/Day_27/FilesOperation/obj/Debug/net5.0/FilesOperation.GeneratedMSBuildEditorConfig.editorconfig
+/Users/thahseen/Documents/gislen/c-sharp/Day_27/FilesOperation/obj/Debug/net5.0/FilesOperation.AssemblyInfoInputs.cache
+/Users/thahseen/Documents/gislen/c-sharp/Day_27/FilesOperation/obj/Debug/net5.0/FilesOperation.AssemblyInfo.cs
+/Users/thahseen/Documents/gislen/c-sharp/Day_27/FilesOperation/obj/Debug/net5.0/FilesOperation.csproj.CoreCompileInputs.cache
+/Users/thahseen/Documents/gislen/c-sharp/Day_27/FilesOperation/obj/Debug/net5.0/FilesOperation.dll
+/Users/thahseen/Documents/gislen/c-sharp/Day_27/FilesOperation/obj/Debug/net5.0/ref/FilesOperation.dll
+/Users/thahseen/Documents/gislen/c-sharp/Day_27/FilesOperation/obj/Debug/net5.0/FilesOperation.pdb
+/Users/thahseen/Documents/gislen/c-sharp/Day_27/FilesOperation/obj/Debug/net5.0/FilesOperation.genruntimeconfig.cache

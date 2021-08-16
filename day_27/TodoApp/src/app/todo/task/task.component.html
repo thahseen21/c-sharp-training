@@ -1,0 +1,11 @@
+<div class="task-container" *ngFor="let todo of todoList">
+  <div class="task" [ngClass]="{ 'task-completed': todo.isOver }">
+    <input
+      type="checkbox"
+      [checked]="todo.isOver"
+      (change)="taskCompleteToggler(todo.key)"
+    />
+    <p>{{ todo.todo }}</p>
+    <button (click)="removeTask(todo.key)">delete</button>
+  </div>
+</div>
