@@ -9,11 +9,13 @@ import { NewBookComponent } from './new-book/new-book.component';
 import { DisplayBookComponent } from './display-book/display-book.component';
 import { BookDetailsComponent } from './book-details/book-details.component';
 import { HeaderComponent } from './header/header.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 const appRoutes: Routes = [
   { path: '', component: NewBookComponent },
   { path: 'book', component: DisplayBookComponent },
   { path: 'book/:id', component: BookDetailsComponent },
+  { path: '**', component: PageNotFoundComponent },
 ];
 
 @NgModule({
