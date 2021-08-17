@@ -1,63 +1,69 @@
 <div class="form-container" [formGroup]="userDetail">
-  <div class="row">
-    <label  *ngIf="
-    !(userDetail.controls.firstName.status === 'INVALID' &&
-    userDetail.controls.firstName.touched)
-  " for="firstName">First Name:</label>
-    <h5
-      *ngIf="
+    <div class="row">
+        <h5 *ngIf="
+        !(
+          userDetail.controls.firstName.status === 'INVALID' &&
+          userDetail.controls.firstName.touched
+        )
+      " for="firstName">
+            First Name:
+        </h5>
+        <h5 *ngIf="
         userDetail.controls.firstName.status === 'INVALID' &&
         userDetail.controls.firstName.touched
-      "
-    >
-      please enter your first name
-    </h5>
-    <input type="text" placeholder="First Name" formControlName="firstName" />
-  </div>
-  <br />
-  <div class="row">
-    <p
-      *ngIf="
+      ">
+            please enter your first name
+        </h5>
+        <input type="text" placeholder="First Name" formControlName="firstName" />
+    </div>
+    <br />
+    <div class="row">
+        <h5 *ngIf="
         userDetail.controls.lastName.status === 'INVALID' &&
         userDetail.controls.lastName.touched
-      "
-    >
-      please enter
-    </p>
-    <label for="lastName">Last Name:</label>
-    <input type="text" placeholder="Last Name" formControlName="lastName" />
-  </div>
-  <br />
+      ">
+            Please enter you last name:
+        </h5>
+        <h5 *ngIf="
+        !(
+          userDetail.controls.lastName.status === 'INVALID' &&
+          userDetail.controls.lastName.touched
+        )
+      ">
+            Last Name:
+        </h5>
+        <input type="text" placeholder="Last Name" formControlName="lastName" />
+    </div>
+    <br />
 
-  <div class="row">
-    <p
-      *ngIf="
+    <div class="row">
+        <h5 *ngIf="
         userDetail.controls.phoneNum.status === 'INVALID' &&
         userDetail.controls.phoneNum.touched
-      "
-    >
-      please enter
-    </p>
-    <label for="phoneNum">Phone Number:</label>
-    <input type="text" placeholder="Phone Number" formControlName="phoneNum" />
-  </div>
-  <br />
-  <div class="row">
-    <p
-      *ngIf="
+      ">
+            please enter phone number:
+        </h5>
+        <h5 *ngIf="
+        !(userDetail.controls.phoneNum.status === 'INVALID' &&
+        userDetail.controls.phoneNum.touched)
+      " for="phoneNum">Phone Number:</h5>
+        <input type="text" placeholder="Phone Number" formControlName="phoneNum" />
+    </div>
+    <br />
+    <div class="row">
+        <h5 *ngIf="
         userDetail.controls.mail.status === 'INVALID' &&
         userDetail.controls.mail.touched
-      "
-    >
-      please enter
-    </p>
-    <label for="mail">Mail:</label>
-    <input type="text" placeholder="Mail" formControlName="mail" />
-  </div>
-  <br />
-  <div class="address-container" formGroupName="address">
-    <div class="row">
-      <!-- <p
+      ">
+            please enter
+        </h5>
+        <h5 for="mail">Mail:</h5>
+        <input type="text" placeholder="Mail" formControlName="mail" />
+    </div>
+    <br />
+    <div class="address-container" formGroupName="address">
+        <div class="row">
+            <!-- <p
       *ngIf="
       userDetail.get('addresses')?.status === 'INVALID' &&
         userDetail.controls.lastName.touched
@@ -65,37 +71,37 @@
     >
       please enter
     </p> -->
-      <label for="home">House No. & Street Name:</label>
-      <input type="text" placeholder="Address" formControlName="home" />
-    </div>
-    <br />
+            <h5 for="home">House No. & Street Name:</h5>
+            <input type="text" placeholder="Address" formControlName="home" />
+        </div>
+        <br />
 
-    <div class="row">
-      <label for="area">Area:</label>
-      <input type="text" placeholder="Area" formControlName="area" />
-    </div>
-    <br />
+        <div class="row">
+            <h5 for="area">Area:</h5>
+            <input type="text" placeholder="Area" formControlName="area" />
+        </div>
+        <br />
 
-    <div class="row">
-      <label for="state">State:</label>
+        <div class="row">
+            <h5 for="state">State:</h5>
 
-      <select formControlName="state" (change)="stateChange($event)">
+            <select formControlName="state" (change)="stateChange($event)">
         <option *ngFor="let item of states" [value]="item.id">
           {{ item.state }}
         </option>
       </select>
-    </div>
-    <br />
+        </div>
+        <br />
 
-    <div class="row">
-      <label for="country">City:</label>
-      <select formControlName="city">
+        <div class="row">
+            <h5 for="country">City:</h5>
+            <select formControlName="city">
         <option *ngFor="let item of filteredCities" [value]="item.id">
           {{ item.city }}
         </option>
       </select>
+        </div>
+        <br />
     </div>
-    <br />
-  </div>
-  <button (click)="addResponse()">Submit</button>
+    <button (click)="addResponse()">Submit</button>
 </div>

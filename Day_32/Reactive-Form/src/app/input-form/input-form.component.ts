@@ -26,9 +26,9 @@ export class InputFormComponent implements OnInit {
 
   states = [
     { id: 1, state: 'Kerala' },
-    { id: 1, state: 'TamilNadu' },
-    { id: 2, state: 'Karnataka' },
-    { id: 2, state: 'Andhra Pradesh' },
+    { id: 2, state: 'TamilNadu' },
+    { id: 3, state: 'Karnataka' },
+    { id: 4, state: 'Andhra Pradesh' },
   ];
   cities = [
     { id: 1, city: 'Ernakulam' },
@@ -41,11 +41,15 @@ export class InputFormComponent implements OnInit {
 
   stateChange($event: any) {
     this.filteredCities = this.cities.filter(
-      (item, index) => item.id === parseInt($event.target.value)
+      (item) => item.id === parseInt($event.target.value)
     );
   }
 
   addResponse() {
-    console.log(this.userDetail);
+    if (this.userDetail.status !== 'INVALID') {
+      alert('Submitted successfully');
+    }else{
+      alert("please enter the form")
+    }
   }
 }
