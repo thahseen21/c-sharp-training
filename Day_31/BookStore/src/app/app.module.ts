@@ -11,7 +11,7 @@ import { BookDetailsComponent } from './book-details/book-details.component';
 import { HeaderComponent } from './header/header.component';
 
 const appRoutes: Routes = [
-  { path: 'newbook', component: NewBookComponent },
+  { path: '', component: NewBookComponent },
   { path: 'book', component: DisplayBookComponent },
   { path: 'book/:id', component: BookDetailsComponent },
 ];

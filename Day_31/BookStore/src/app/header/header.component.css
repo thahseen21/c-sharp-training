@@ -1,0 +1,17 @@
+nav {
+  display: flex;
+}
+
+ul{
+    display: flex;
+    width: 10%;
+    justify-content: space-around;
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
