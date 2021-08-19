@@ -1,0 +1,15 @@
+/Users/mohammed/Documents/Thahseen/c-sharp/Day_33/CSharp/bin/Debug/net5.0/CSharp.deps.json
+/Users/mohammed/Documents/Thahseen/c-sharp/Day_33/CSharp/bin/Debug/net5.0/CSharp.runtimeconfig.json
+/Users/mohammed/Documents/Thahseen/c-sharp/Day_33/CSharp/bin/Debug/net5.0/CSharp.runtimeconfig.dev.json
+/Users/mohammed/Documents/Thahseen/c-sharp/Day_33/CSharp/bin/Debug/net5.0/CSharp.dll
+/Users/mohammed/Documents/Thahseen/c-sharp/Day_33/CSharp/bin/Debug/net5.0/ref/CSharp.dll
+/Users/mohammed/Documents/Thahseen/c-sharp/Day_33/CSharp/bin/Debug/net5.0/CSharp.pdb
+/Users/mohammed/Documents/Thahseen/c-sharp/Day_33/CSharp/obj/Debug/net5.0/CSharp.csproj.AssemblyReference.cache
+/Users/mohammed/Documents/Thahseen/c-sharp/Day_33/CSharp/obj/Debug/net5.0/CSharp.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mohammed/Documents/Thahseen/c-sharp/Day_33/CSharp/obj/Debug/net5.0/CSharp.AssemblyInfoInputs.cache
+/Users/mohammed/Documents/Thahseen/c-sharp/Day_33/CSharp/obj/Debug/net5.0/CSharp.AssemblyInfo.cs
+/Users/mohammed/Documents/Thahseen/c-sharp/Day_33/CSharp/obj/Debug/net5.0/CSharp.csproj.CoreCompileInputs.cache
+/Users/mohammed/Documents/Thahseen/c-sharp/Day_33/CSharp/obj/Debug/net5.0/CSharp.dll
+/Users/mohammed/Documents/Thahseen/c-sharp/Day_33/CSharp/obj/Debug/net5.0/ref/CSharp.dll
+/Users/mohammed/Documents/Thahseen/c-sharp/Day_33/CSharp/obj/Debug/net5.0/CSharp.pdb
+/Users/mohammed/Documents/Thahseen/c-sharp/Day_33/CSharp/obj/Debug/net5.0/CSharp.genruntimeconfig.cache
