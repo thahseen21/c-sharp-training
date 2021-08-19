@@ -1,0 +1,15 @@
+/Users/mohammed/Documents/Thahseen/study/Dummy/Dummy/bin/Debug/net5.0/Dummy.deps.json
+/Users/mohammed/Documents/Thahseen/study/Dummy/Dummy/bin/Debug/net5.0/Dummy.runtimeconfig.json
+/Users/mohammed/Documents/Thahseen/study/Dummy/Dummy/bin/Debug/net5.0/Dummy.runtimeconfig.dev.json
+/Users/mohammed/Documents/Thahseen/study/Dummy/Dummy/bin/Debug/net5.0/Dummy.dll
+/Users/mohammed/Documents/Thahseen/study/Dummy/Dummy/bin/Debug/net5.0/ref/Dummy.dll
+/Users/mohammed/Documents/Thahseen/study/Dummy/Dummy/bin/Debug/net5.0/Dummy.pdb
+/Users/mohammed/Documents/Thahseen/study/Dummy/Dummy/obj/Debug/net5.0/Dummy.csproj.AssemblyReference.cache
+/Users/mohammed/Documents/Thahseen/study/Dummy/Dummy/obj/Debug/net5.0/Dummy.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mohammed/Documents/Thahseen/study/Dummy/Dummy/obj/Debug/net5.0/Dummy.AssemblyInfoInputs.cache
+/Users/mohammed/Documents/Thahseen/study/Dummy/Dummy/obj/Debug/net5.0/Dummy.AssemblyInfo.cs
+/Users/mohammed/Documents/Thahseen/study/Dummy/Dummy/obj/Debug/net5.0/Dummy.csproj.CoreCompileInputs.cache
+/Users/mohammed/Documents/Thahseen/study/Dummy/Dummy/obj/Debug/net5.0/Dummy.dll
+/Users/mohammed/Documents/Thahseen/study/Dummy/Dummy/obj/Debug/net5.0/ref/Dummy.dll
+/Users/mohammed/Documents/Thahseen/study/Dummy/Dummy/obj/Debug/net5.0/Dummy.pdb
+/Users/mohammed/Documents/Thahseen/study/Dummy/Dummy/obj/Debug/net5.0/Dummy.genruntimeconfig.cache
