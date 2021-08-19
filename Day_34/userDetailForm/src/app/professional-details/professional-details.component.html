@@ -1,1 +1,36 @@
-<p>professional-details works!</p>
+<div class="div" [formGroup]="userDetail.profDetailList">
+  <div
+    class="prof-form-container"
+    *ngFor="let item of userDetail.profDetailFormGroup.controls; let i = index"
+    formArrayName="professional"
+  >
+    <div class="form" [formGroupName]="i">
+      <div class="row">
+        <label for="">Company</label>
+        <input type="text" formControlName="company" />
+      </div>
+      <div class="row">
+        <label for="">Designation</label>
+        <input type="text" formControlName="designation" />
+      </div>
+      <div class="row">
+        <label for="">From</label>
+        <input type="text" formControlName="startDate" />
+      </div>
+      <div class="row">
+        <label for="">To</label>
+        <input type="text" formControlName="endDate" />
+      </div>
+      <div class="row">
+        <label for="">Skills</label>
+        <input type="text" formControlName="skills" />
+      </div>
+    </div>
+  </div>
+  <button class="btn btn-primary" (click)="addNewProfDetail()">
+    Add Skills
+  </button>
+  <button class="btn btn-primary" (click)="goToAttachment()">
+    Next
+  </button>
+</div>

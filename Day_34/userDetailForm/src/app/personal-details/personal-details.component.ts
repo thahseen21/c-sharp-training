@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core'
-import { FormControl, FormGroup } from '@angular/forms'
-import { Router } from '@angular/router';
+import { Router } from '@angular/router'
+import { UserDetailService } from '../user-detail.service'
 
 @Component({
   selector: 'app-personal-details',
@@ -8,24 +8,16 @@ import { Router } from '@angular/router';
   styleUrls: ['./personal-details.component.css'],
 })
 export class PersonalDetailsComponent implements OnInit {
-  constructor(private router:Router) {}
+  profileForm: any
+
+  constructor(private router: Router, private userDetail: UserDetailService) {
+    this.profileForm = userDetail.profileForm
+    console.log(userDetail.profDetailList);
+  }
 
   ngOnInit(): void {}
 
-  profileForm = new FormGroup({
-    firstName: new FormControl(''),
-    lastName: new FormControl(''),
-    phoneNumber:new FormControl(''),
-    address: new FormGroup({
-      street: new FormControl(''),
-      city: new FormControl(''),
-      state: new FormControl(''),
-      zip: new FormControl(''),
-    }),
-  })
-
-  goToProfessionalDetails(){
+  goToProfessionalDetails() {
     this.router.navigate(['professionalDetails'])
   }
-
 }
