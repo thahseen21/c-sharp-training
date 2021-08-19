@@ -20,7 +20,7 @@ export class ProfessionalDetailsComponent implements OnInit {
 
   goToAttachment(){
 this.router.navigate(['attachmentDetails'])
-  }
+  } 
 
   ngOnInit(): void {}
 }
