@@ -1,0 +1,35 @@
+<div class="form-container" [formGroup]="profileForm" >
+  <div class="row">
+    <label for="">First Name:</label>
+    <input type="text" formControlName="firstName" />
+  </div>
+  <div class="row">
+    <label for="">Last Name:</label>
+    <input type="text" formControlName='LastName' />
+  </div>
+  <div class="row">
+    <label for="">Phone Number:</label>
+    <input type="text" formControlName='phoneNumber' />
+  </div>
+  <div class="address-container" formGroupName="address" >
+    <div class="row">
+      <label for="">Street:</label>
+      <input type="text" formControlName='street' />
+    </div>
+    <div class="row">
+      <label for="">City:</label>
+      <input type="text" formControlName='city' />
+    </div>
+    <div class="row">
+      <label for="">State:</label>
+      <input type="text" formControlName='state' />
+    </div>
+    <div class="row">
+      <label for="">Zip Code:</label>
+      <input type="text" formControlName='zip' />
+    </div>
+  </div>
+  <div class="submit-btn-container">
+        <button class="btn btn-primary" (click)="goToProfessionalDetails()" >Next</button>
+  </div>
+</div>
