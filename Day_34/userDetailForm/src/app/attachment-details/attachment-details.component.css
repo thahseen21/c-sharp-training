@@ -1,0 +1,13 @@
+.attachment-container {
+  width: 100%;
+  display: flex;
+justify-content: center;
+}
+.form-container {
+    width: 60%;
+    margin-top: 2%;
+}
+
+.btn{
+margin-top: 2%;
+}

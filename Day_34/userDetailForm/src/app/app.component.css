@@ -20,18 +20,18 @@ nav {
 
 .a-tag {
     text-decoration: none;
-    color: red;
+    color: blue;
     margin-top: 5%;
     padding: 8px 0px 8px 15px;
 }
 
 .active {
     color: white;
-    background-color: red;
+    background-color: rgba(9, 9, 255, 0.767);
 }
 
 nav a:hover {
-    background-color: red;
+    background-color: blue;
     color: white;
     transition: 0.2s;
 }
@@ -39,7 +39,6 @@ nav a:hover {
 .form-wrapper {
     position: relative;
     left: 15%;
-    margin-top: 2%;
-    padding-left: 5%;
-    width: 80%;
+    width: 85%;
+    margin-top: 1%;
 }

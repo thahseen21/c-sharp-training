@@ -1,4 +1,7 @@
 <div class="attachment-container" [formGroup]="attachmentForm">
-    <input type="file" formControlName="attachment" />
-    <button (click)="submitForm()">Submit</button>
+  <div class="form-container">
+      <label for="">Upload Resume</label>
+    <input type="file" class="form-control" formControlName="attachment" />
+    <button class="btn btn-primary" (click)="submitForm()">Submit</button>
+  </div>
 </div>

@@ -1,35 +1,39 @@
-<div class="form-group" [formGroup]="profileForm">
+<div class="container">
+  <div class="form-group" [formGroup]="profileForm">
     <div class="input-container">
-        <label for="">First Name:</label>
-        <input type="text" class="form-control" formControlName="firstName" />
+      <label for="">First Name</label>
+      <input type="text" class="form-control" formControlName="firstName" />
     </div>
     <div class="input-container">
-        <label for="">Last Name:</label>
-        <input type="text" class="form-control" formControlName='lastName' />
+      <label for="">Last Name</label>
+      <input type="text" class="form-control" formControlName="lastName" />
     </div>
     <div class="input-container">
-        <label for="">Phone Number:</label>
-        <input type="text" class="form-control" formControlName='phoneNumber' />
+      <label for="">Phone Number</label>
+      <input type="text" class="form-control" formControlName="phoneNumber" />
     </div>
     <div class="address-container" formGroupName="address">
-        <div class="input-container">
-            <label for="">Street:</label>
-            <input type="text" class="form-control" formControlName='street' />
-        </div>
-        <div class="input-container">
-            <label for="">City:</label>
-            <input type="text" class="form-control" formControlName='city' />
-        </div>
-        <div class="input-container">
-            <label for="">State:</label>
-            <input type="text" class="form-control" formControlName='state' />
-        </div>
-        <div class="input-container">
-            <label for="">Zip Code:</label>
-            <input type="text" class="form-control" formControlName='zip' />
-        </div>
+      <div class="input-container">
+        <label for="">Street</label>
+        <input type="text" class="form-control" formControlName="street" />
+      </div>
+      <div class="input-container">
+        <label for="">State</label>
+        <input type="text" class="form-control" formControlName="state" />
+      </div>
+      <div class="input-container">
+        <label for="">City</label>
+        <input type="text" class="form-control" formControlName="city" />
+      </div>
+      <div class="input-container">
+        <label for="">Zip Code</label>
+        <input type="text" class="form-control" formControlName="zip" />
+      </div>
     </div>
-    <div class="submit-btn-container">
-        <button class="btn btn-primary" (click)="goToProfessionalDetails()">Next</button>
-    </div>
+  </div>
+  <div class="submit-btn-container">
+    <button class="btn btn-primary" (click)="goToProfessionalDetails()">
+      Next
+    </button>
+  </div>
 </div>
