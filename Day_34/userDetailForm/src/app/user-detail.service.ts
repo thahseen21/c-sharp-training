@@ -9,15 +9,10 @@ export class UserDetailService {
 
 
   constructor(private fb:FormBuilder) {
-    // this.profDetail = new FormGroup({
-    //   professionalDetail:this.
-    // })
-  // profDetailList = new FormArray([this.createProfDetail()])
+
   this.profDetailList = this.fb.group({
     professional:new FormArray([this.createProfDetail()])
   })
-
-  console.log(this.profDetailList,this.profDetailList.get('professional'))
 
   }
 
@@ -35,7 +30,6 @@ export class UserDetailService {
     })
   }
 
-
   addProfDetail() {
     this.profDetailFormGroup.push(this.createProfDetail())
   }
@@ -50,5 +44,9 @@ export class UserDetailService {
       state: new FormControl(''),
       zip: new FormControl(''),
     }),
+  })
+
+  attachmentForm = new FormGroup({
+    attachment: new FormControl()
   })
 }

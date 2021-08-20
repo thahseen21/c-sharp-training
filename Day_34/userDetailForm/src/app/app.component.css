@@ -1,0 +1,45 @@
+.app-container {
+    display: flex;
+}
+
+.side-nav {
+    position: fixed;
+    height: 100%;
+    width: 15%;
+    background-color: white;
+    z-index: 100;
+    box-shadow: 0px 1px 10px 1px #0000002b;
+}
+
+nav {
+    width: 100%;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.a-tag {
+    text-decoration: none;
+    color: red;
+    margin-top: 5%;
+    padding: 8px 0px 8px 15px;
+}
+
+.active {
+    color: white;
+    background-color: red;
+}
+
+nav a:hover {
+    background-color: red;
+    color: white;
+    transition: 0.2s;
+}
+
+.form-wrapper {
+    position: relative;
+    left: 15%;
+    margin-top: 2%;
+    padding-left: 5%;
+    width: 80%;
+}

@@ -10,7 +10,8 @@ import { ProfessionalDetailsComponent } from './professional-details/professiona
 import { AttachmentDetailsComponent } from './attachment-details/attachment-details.component'
 
 const appRoutes: Routes = [
-  { path: '', component: PersonalDetailsComponent },
+  {path:'',redirectTo:'profileForm', pathMatch: 'full' },
+  { path: 'profileForm', component: PersonalDetailsComponent },
   { path: 'professionalDetails', component: ProfessionalDetailsComponent },
   { path: 'attachmentDetails', component: AttachmentDetailsComponent },
 ]

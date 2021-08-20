@@ -1,1 +1,4 @@
-<p>attachment-details works!</p>
+<div class="attachment-container" [formGroup]="attachmentForm">
+    <input type="file" formControlName="attachment" />
+    <button (click)="submitForm()">Submit</button>
+</div>
