@@ -9,18 +9,18 @@ import { Router } from '@angular/router'
 })
 export class ProfessionalDetailsComponent implements OnInit {
   professionalDetails
-  constructor(public userDetail: UserDetailService,private router:Router) {
+  constructor(public userDetail: UserDetailService, private router: Router) {
     this.professionalDetails = userDetail.profDetailList
   }
 
   addNewProfDetail() {
     this.userDetail.addProfDetail()
-    console.log(this.professionalDetails?.controls)
   }
 
-  goToAttachment(){
-this.router.navigate(['attachmentDetails'])
-  } 
+  goToAttachment() {
+    this.router.navigate(['attachmentDetails'])
+    console.log(this.professionalDetails)
+  }
 
   ngOnInit(): void {}
 }

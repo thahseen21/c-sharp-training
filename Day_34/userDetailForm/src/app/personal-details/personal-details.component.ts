@@ -12,12 +12,12 @@ export class PersonalDetailsComponent implements OnInit {
 
   constructor(private router: Router, private userDetail: UserDetailService) {
     this.profileForm = userDetail.profileForm
-    console.log(userDetail.profDetailList);
   }
 
   ngOnInit(): void {}
 
   goToProfessionalDetails() {
     this.router.navigate(['professionalDetails'])
+    console.log(this.profileForm)
   }
 }

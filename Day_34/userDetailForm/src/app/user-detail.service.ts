@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core'
-import { FormArray, FormBuilder, FormControl, FormGroup } from '@angular/forms'
+import { FormArray, FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms'
 
 @Injectable({
   providedIn: 'root',
@@ -22,11 +22,11 @@ export class UserDetailService {
 
   createProfDetail(): FormGroup {
     return new FormGroup({
-      company:new FormControl(''),
-      designation:new FormControl(''),
-      startDate: new FormControl(''),
-      endDate:new FormControl(''),
-      skills: new FormControl(''),
+      company:new FormControl('',Validators.required),
+      designation:new FormControl('',Validators.required),
+      startDate: new FormControl('',Validators.required),
+      endDate:new FormControl('',Validators.required),
+      skills: new FormControl('',Validators.required),
     })
   }
 
@@ -35,14 +35,14 @@ export class UserDetailService {
   }
 
   profileForm = new FormGroup({
-    firstName: new FormControl(''),
-    lastName: new FormControl(''),
-    phoneNumber: new FormControl(''),
+    firstName: new FormControl('',Validators.required),
+    lastName: new FormControl('',Validators.required),
+    phoneNumber: new FormControl('',[Validators.required,Validators.pattern("^[0-9]{10,10}$")]),
     address: new FormGroup({
-      street: new FormControl(''),
-      city: new FormControl(''),
-      state: new FormControl(''),
-      zip: new FormControl(''),
+      street: new FormControl('',Validators.required),
+      city: new FormControl('',Validators.required),
+      state: new FormControl('',Validators.required),
+      zip: new FormControl('',[Validators.required,Validators.pattern("^[0-9]{6,6}$")]),
     }),
   })
 

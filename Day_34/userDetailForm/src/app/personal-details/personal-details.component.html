@@ -1,38 +1,145 @@
 <div class="container">
   <div class="form-group" [formGroup]="profileForm">
     <div class="input-container">
-      <label for="">First Name</label>
+      <label
+        for=""
+        [ngClass]="{
+          error:
+            !profileForm.get('firstName').valid &&
+            profileForm.get('firstName').touched
+        }"
+      >
+        {{
+          profileForm.get('firstName').valid ||
+          !profileForm.get('firstName').touched
+            ? 'First Name'
+            : 'Please enter your first name'
+        }}
+      </label>
       <input type="text" class="form-control" formControlName="firstName" />
     </div>
     <div class="input-container">
-      <label for="">Last Name</label>
+      <label
+        for=""
+        [ngClass]="{
+          error:
+            !profileForm.get('lastName').valid &&
+            profileForm.get('lastName').touched
+        }"
+      >
+        {{
+          profileForm.get('lastName').valid ||
+          !profileForm.get('lastName').touched
+            ? 'Last Name'
+            : 'Please enter your last name'
+        }}
+      </label>
       <input type="text" class="form-control" formControlName="lastName" />
     </div>
     <div class="input-container">
-      <label for="">Phone Number</label>
-      <input type="text" class="form-control" formControlName="phoneNumber" />
+      <label
+        for=""
+        [ngClass]="{
+          error:
+            !profileForm.get('phoneNumber').valid &&
+            profileForm.get('phoneNumber').touched
+        }"
+      >
+        {{
+          profileForm.get('phoneNumber').valid ||
+          !profileForm.get('phoneNumber').touched
+            ? 'Phone Number'
+            : 'Please enter your phone number'
+        }}
+      </label>
+      <input type="number" class="form-control" formControlName="phoneNumber" />
     </div>
     <div class="address-container" formGroupName="address">
       <div class="input-container">
-        <label for="">Street</label>
+        <label
+          for=""
+          [ngClass]="{
+            error:
+              !profileForm.get('address.street').valid &&
+              profileForm.get('address.street').touched
+          }"
+        >
+          {{
+            profileForm.get('address.street').valid ||
+            !profileForm.get('address.street').touched
+              ? 'Street'
+              : 'Please enter your street name'
+          }}
+        </label>
         <input type="text" class="form-control" formControlName="street" />
       </div>
       <div class="input-container">
-        <label for="">State</label>
+        <label
+          for=""
+          [ngClass]="{
+            error:
+              !profileForm.get('address.state').valid &&
+              profileForm.get('address.state').touched
+          }"
+        >
+          {{
+            profileForm.get('address.state').valid ||
+            !profileForm.get('address.state').touched
+              ? 'State'
+              : 'Please select your state'
+          }}
+        </label>
         <input type="text" class="form-control" formControlName="state" />
       </div>
       <div class="input-container">
-        <label for="">City</label>
+        <label
+          for=""
+          [ngClass]="{
+            error:
+              !profileForm.get('address.city').valid &&
+              profileForm.get('address.city').touched
+          }"
+        >
+          {{
+            profileForm.get('address.city').valid ||
+            !profileForm.get('address.city').touched
+              ? 'City'
+              : 'Please enter your city'
+          }}
+        </label>
         <input type="text" class="form-control" formControlName="city" />
       </div>
       <div class="input-container">
-        <label for="">Zip Code</label>
-        <input type="text" class="form-control" formControlName="zip" />
+        <label
+          for=""
+          [ngClass]="{
+            error:
+              !profileForm.get('address.zip').valid &&
+              profileForm.get('address.zip').touched
+          }"
+        >
+          {{
+            profileForm.get('address.zip').valid ||
+            !profileForm.get('address.zip').touched
+              ? 'Zip Code'
+              : 'Please enter your zip code'
+          }}
+        </label>
+        <input
+          type="number"
+          class="form-control"
+          maxlength="6"
+          formControlName="zip"
+        />
       </div>
     </div>
   </div>
   <div class="submit-btn-container">
-    <button class="btn btn-primary" (click)="goToProfessionalDetails()">
+    <button
+      class="btn btn-primary"
+      (click)="goToProfessionalDetails()"
+      [disabled]="!profileForm.valid"
+    >
       Next
     </button>
   </div>
