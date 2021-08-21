@@ -4,38 +4,114 @@
     *ngFor="let item of userDetail.profDetailFormGroup.controls; let i = index"
     formArrayName="professional"
   >
-  <h4>Detail {{userDetail.profDetailFormGroup.controls.length}}</h4>
+    <h4>Detail {{ i + 1 }}</h4>
     <div class="form-wrapper" [formGroupName]="i">
       <ul class="input-container">
-        <label for="">Company</label>
+        <label
+          for=""
+          [ngClass]="{
+            error:
+              !getFormControl(i, 'company').valid &&
+              getFormControl(i, 'company').touched
+          }"
+        >
+          {{
+            getFormControl(i, 'company').valid ||
+            !getFormControl(i, 'company').touched
+              ? 'Company Name'
+              : 'Please enter your company name'
+          }}
+        </label>
         <input type="text" class="form-control" formControlName="company" />
       </ul>
       <ul class="input-container">
-        <label for="">Designation</label>
+        <label
+          [ngClass]="{
+            error:
+              !getFormControl(i, 'designation').valid &&
+              getFormControl(i, 'designation').touched
+          }"
+          for=""
+        >
+          {{
+            getFormControl(i, 'designation').valid ||
+            !getFormControl(i, 'designation').touched
+              ? 'Designation'
+              : 'Please enter your designation'
+          }}
+        </label>
         <input type="text" class="form-control" formControlName="designation" />
       </ul>
+      <div class="date-wrapper">
+        <ul class="input-container">
+          <label
+            [ngClass]="{
+              error:
+                !getFormControl(i, 'startDate').valid &&
+                getFormControl(i, 'startDate').touched
+            }"
+            for=""
+          >
+            {{
+              getFormControl(i, 'startDate').valid ||
+              !getFormControl(i, 'startDate').touched
+                ? 'From'
+                : 'Please enter your starting date'
+            }}
+          </label>
+          <input type="date" class="form-control" formControlName="startDate" />
+        </ul>
+        <ul class="input-container" id='remove-margin' >
+          <label
+            [ngClass]="{
+              error:
+                !getFormControl(i, 'endDate').valid &&
+                getFormControl(i, 'endDate').touched
+            }"
+            for=""
+          >
+            {{
+              getFormControl(i, 'endDate').valid ||
+              !getFormControl(i, 'endDate').touched
+                ? 'To'
+                : 'Please enter your ended date'
+            }}
+          </label>
+          <input type="date" class="form-control" formControlName="endDate" />
+        </ul>
+      </div>
       <ul class="input-container">
-        <label for="">From</label>
-        <input type="text" class="form-control" formControlName="startDate" />
-      </ul>
-      <ul class="input-container">
-        <label for="">To</label>
-        <input type="text" class="form-control" formControlName="endDate" />
-      </ul>
-      <ul class="input-container">
-        <label for="">Skills</label>
+        <label
+          [ngClass]="{
+            error:
+              !getFormControl(i, 'skills').valid &&
+              getFormControl(i, 'skills').touched
+          }"
+          for=""
+        >
+          {{
+            getFormControl(i, 'skills').valid ||
+            !getFormControl(i, 'skills').touched
+              ? 'Skills'
+              : 'Please enter your skills'
+          }}
+        </label>
         <input type="text" class="form-control" formControlName="skills" />
       </ul>
     </div>
+    <button class="btn btn-primary" (click)="removeProfileDetail(i)">
+      Remove Skills
+    </button>
   </div>
   <div class="btn-wrapper">
     <button class="btn btn-primary" (click)="addNewProfDetail()">
       Add Skills
     </button>
-    <button class="btn btn-primary" (click)="addNewProfDetail()">
-      Remove Skills
-    </button>
-    <button class="btn btn-primary" (click)="goToAttachment()">
+    <button
+      class="btn btn-primary"
+      (click)="goToAttachment()"
+      [disabled]="!professionalDetails.valid"
+    >
       Next
     </button>
   </div>
