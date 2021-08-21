@@ -1,17 +1,16 @@
 <div class="app-container">
-    <div class="side-nav">
-        <nav>
-            <a class="a-tag" routerLink="/profileForm" routerLinkActive="active">Personal Details</a
-      >
-      <a
-        class="a-tag"
-        routerLinkActive="active"
-        routerLink="professionalDetails"
-        >Professional Details</a
-      >
-      <a class="a-tag" routerLinkActive="active" routerLink="attachmentDetails"
-        >Resume Details</a
-      >
+  <div class="side-nav">
+    <nav>
+      <a class="a-tag" routerLink="/profileForm" routerLinkActive="active">
+        Personal Details
+      </a>
+      <!-- <a class="a-tag" routerLinkActive="active" routerLink="professionalDetails"> -->
+      <a class="a-tag" routerLinkActive="active" (click)="forwardToProfessionalDetails()">
+        Professional Details
+      </a>
+      <a class="a-tag" routerLinkActive="active" routerLink="attachmentDetails">
+        Resume Details
+      </a>
     </nav>
   </div>
   <div class="form-wrapper">
