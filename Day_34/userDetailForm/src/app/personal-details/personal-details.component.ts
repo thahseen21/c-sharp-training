@@ -18,6 +18,5 @@ export class PersonalDetailsComponent implements OnInit {
 
   goToProfessionalDetails() {
     this.router.navigate(['professionalDetails'])
-    console.log(this.profileForm)
   }
 }

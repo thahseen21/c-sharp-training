@@ -15,7 +15,14 @@ export class AppComponent {
     if (this.userDetail.profileForm.valid) {
       this.router.navigate(['/professionalDetails'])
     } else {
-      
+      alert('Please fill this form')
+    }
+  }
+  forwardToAttachmentDetails(){
+    if(this.userDetail.profDetailFormGroup.valid){
+      this.router.navigate(['/attachmentDetails'])
+    }else{
+alert('Please fill this form')
     }
   }
 }

@@ -4,13 +4,12 @@
       <a class="a-tag" routerLink="/profileForm" routerLinkActive="active">
         Personal Details
       </a>
-      <!-- <a class="a-tag" routerLinkActive="active" routerLink="professionalDetails"> -->
       <a class="a-tag" routerLinkActive="active" (click)="forwardToProfessionalDetails()">
         Professional Details
       </a>
-      <a class="a-tag" routerLinkActive="active" routerLink="attachmentDetails">
+      <a class="a-tag" routerLinkActive="active" (click)="forwardToAttachmentDetails()" >
         Resume Details
-      </a>
+      </a>  
     </nav>
   </div>
   <div class="form-wrapper">

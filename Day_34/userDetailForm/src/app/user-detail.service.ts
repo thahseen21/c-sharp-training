@@ -11,6 +11,9 @@ import {
   providedIn: 'root',
 })
 export class UserDetailService {
+
+  userDetailList:any;
+
   profDetailList: FormGroup
 
   constructor(private fb: FormBuilder) {
