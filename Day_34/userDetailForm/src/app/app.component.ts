@@ -12,7 +12,10 @@ export class AppComponent {
   constructor(private router: Router, private userDetail: UserDetailService) {}
 
   forwardToProfessionalDetails() {
-    if(this.userDetail.profileForm.valid)
-    this.router.navigate(['/professionalDetails'])
+    if (this.userDetail.profileForm.valid) {
+      this.router.navigate(['/professionalDetails'])
+    } else {
+      
+    }
   }
 }
