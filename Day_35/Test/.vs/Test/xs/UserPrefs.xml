@@ -3,15 +3,14 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="TestClass/UnitTest1.cs">
     <Files>
       <File FileName="Test/Program.cs" Line="1" Column="1" />
-      <File FileName="TestClass/UnitTest1.cs" Line="1" Column="1" />
+      <File FileName="TestClass/UnitTest1.cs" Line="34" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Test" expanded="True">
-            <Node name="TestClass" expanded="True">
-              <Node name="UnitTest1.cs" selected="True" />
-            </Node>
+            <Node name="Test" expanded="True" />
+            <Node name="TestClass" expanded="True" selected="True" />
           </Node>
         </State>
       </Pad>

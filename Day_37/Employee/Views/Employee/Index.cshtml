@@ -1,0 +1,44 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model EmployeeModel
+
+<div class="">
+    <form method="POST" asp-controller="employee" asp-action="">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <span asp-validation-for="Name" class="text-danger"></span>
+        <div class="form-group">
+            <label class="col-3">Full Name:</label>
+            <input class="col-6 form-control" type="text" asp-for="Name" id="Name">
+        </div>
+        <span asp-validation-for="Age" class="text-danger"></span>
+        <div class="form-group">
+            <label class="col-3">Age:</label>
+            <input class="col-6 form-control" type="number" asp-for="Age">
+        </div>
+        <span asp-validation-for="Address" class="text-danger"></span>
+        <div class="form-group">
+            <label class="col-3">Address:</label>
+            <textarea class="col-6 form-control" type="text" asp-for="Address"></textarea>
+        </div>
+        <span asp-validation-for="Gender" class="text-danger"></span>
+        <div class="form-group">
+            <label class="col-3">Gender:</label>
+            <input class="col-6 form-control" type="text" asp-for="Gender">
+        </div>
+        <span asp-validation-for="OpenBalance" class="text-danger"></span>
+        <div class="form-group">
+            <label class="col-3">Opening Balance:</label>
+            <input class="col-6 form-control" type="number" asp-for="OpenBalance">
+        </div>
+        <input class="form-control" type="submit">
+    </form>
+</div>
+
+@section Scripts
+{
+@{
+    <partial name="_ValidationScriptsPartial" />
+}
+}

@@ -17,6 +17,7 @@ export class ProfessionalDetailsComponent implements OnInit {
 
   addNewProfDetail() {
     this.userDetail.addProfDetail()
+    console.log('here',this.professionalDetails)
   }
 
   removeProfileDetail(index:number){

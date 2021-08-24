@@ -1,0 +1,13 @@
+@{
+    ViewData["Title"] = "New Customer";
+}
+
+@model CustomerDetail;
+
+<div class="new-customer" >
+    <form asp-action="AddCustomer" method="POST">
+        <label for="name">Name</label>
+        <input type="text" placeholder="Name" asp-for='Name'>
+        <input type="submit" class="btn btn-primary">
+    </form>
+</div>
