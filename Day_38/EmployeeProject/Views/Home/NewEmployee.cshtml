@@ -1,0 +1,44 @@
+@{
+    ViewData["Title"] = "New Employee";
+}
+
+@model EmployeeProject.ViewModel.EmployeeViewModel;
+
+<div class="">
+    <form method="POST" asp-controller="Home" asp-action="NewEmployee">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <span asp-validation-for="Employee.Name" class="text-danger"></span>
+        <div class="form-group">
+            <label class="col-3">Full Name:</label>
+            <input class="col-6 form-control" type="text" asp-for="Employee.Name" id="Employee.Name">
+        </div>
+        <span asp-validation-for="Employee.Designation" class="text-danger"></span>
+        <div class="form-group">
+            <label class="col-3">Designation:</label>
+            <input class="col-6 form-control" type="text" asp-for="Employee.Designation">
+        </div>
+        <div class="form-group">
+            <label class="col-3">Department:</label>
+            <select asp-for="Employee.DepartmentIdFk">
+                <option value="">----select a item----</option>
+                @foreach (var item in Model.DepartmentList)
+                {
+                    <option value="@item.DepartmentName">@item.DepartmentName</option>
+                }
+            </select>
+        </div>
+        <span asp-validation-for="Employee.HireDate" class="text-danger"></span>
+        <div class="form-group">
+            <label class="col-3">HireDate:</label>
+            <input class="col-6 form-control" type="date" asp-for="Employee.HireDate">
+        </div>
+        <input class="form-control" type="submit">
+    </form>
+</div>
+
+@section Scripts
+{
+@{
+    <partial name="_ValidationScriptsPartial" />
+}
+}

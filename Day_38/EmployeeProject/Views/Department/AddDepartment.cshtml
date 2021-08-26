@@ -1,0 +1,15 @@
+@{
+    ViewData["Title"] = "Add Department";
+}
+
+@model EmployeeProject.Models.Implementation.Department;
+
+<div>
+    <form method="POST" asp-controller="Department" asp-action="AddDepartment">
+        <div class="form-group">
+            <label class="col-3">Department Name:</label>
+            <input class="col-6 form-control" type="text" asp-for="DepartmentName" id="Department">
+            <input class=" col-3 form-control" type="submit">
+        </div>
+    </form>
+</div>
