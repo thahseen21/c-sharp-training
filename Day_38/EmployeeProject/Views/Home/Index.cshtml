@@ -22,6 +22,9 @@
                     <td>@item.Name</td>
                     <td>@item.Designation</td>
                     <td>@item.HireDate</td>
+                    <td>
+                         <a asp-action="Update" asp-route-id="@item.Id" class="btn btn-primary"> Update </a>
+                    </td>
                 </tr>
             }
         </tbody>

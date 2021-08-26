@@ -47,14 +47,42 @@ namespace EmployeeProject.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> NewEmployee([FromForm] Employee empObj)
+        public async Task<IActionResult> NewEmployee(EmployeeViewModel empObj)
         {
             if (ModelState.IsValid)
             {
-                var json =
-                    Newtonsoft.Json.JsonConvert.SerializeObject(empObj);
-                Console.WriteLine($"{json}");
-                _db.Employee.Add(empObj);
+                _db.Employee.Add(empObj.Employee);
+                await _db.SaveChangesAsync();
+                return Redirect("/");
+            }
+
+            return View(empObj);
+        }
+
+        public IActionResult Update(int? id)
+        {
+            Console.WriteLine($"{id}");
+
+            var emp = _db.Employee.FirstOrDefault(x => x.Id == id);
+
+            var model = new EmployeeViewModel();
+
+            model.Employee = emp;
+            model.DepartmentList = _db.Department;
+
+            if (emp == null)
+            {
+                return NotFound();
+            }
+            return View(model);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Update(EmployeeViewModel empObj)
+        {
+            if (ModelState.IsValid)
+            {
+                _db.Employee.Update(empObj.Employee);
                 await _db.SaveChangesAsync();
                 return Redirect("/");
             }
@@ -70,7 +98,8 @@ namespace EmployeeProject.Controllers
         ]
         public IActionResult Error()
         {
-            return View(new ErrorViewModel {
+            return View(new ErrorViewModel
+            {
                 RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier
             });
         }

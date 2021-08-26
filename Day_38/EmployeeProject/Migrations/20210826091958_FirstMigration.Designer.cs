@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EmployeeProject.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20210825120616_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20210826091958_FirstMigration")]
+    partial class FirstMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -43,7 +43,7 @@ namespace EmployeeProject.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int?>("DepartmentIdFkId")
+                    b.Property<int>("DepartmentId")
                         .HasColumnType("int");
 
                     b.Property<string>("Designation")
@@ -53,22 +53,25 @@ namespace EmployeeProject.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Name")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("DepartmentIdFkId");
+                    b.HasIndex("DepartmentId");
 
                     b.ToTable("Employee");
                 });
 
             modelBuilder.Entity("EmployeeProject.Models.Implementation.Employee", b =>
                 {
-                    b.HasOne("EmployeeProject.Models.Implementation.Department", "DepartmentIdFk")
+                    b.HasOne("EmployeeProject.Models.Implementation.Department", "Department")
                         .WithMany()
-                        .HasForeignKey("DepartmentIdFkId");
+                        .HasForeignKey("DepartmentId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
-                    b.Navigation("DepartmentIdFk");
+                    b.Navigation("Department");
                 });
 #pragma warning restore 612, 618
         }

@@ -12,7 +12,8 @@ namespace EmployeeProject.Models.Implementation
 
         public string Designation { get; set; }
 
-        public Department DepartmentIdFk { get; set; }
+        public Department Department { get; set; }
+        public int DepartmentId { get; set; }
 
         public DateTime HireDate { get; set; }
     }

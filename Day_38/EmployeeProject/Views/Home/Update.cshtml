@@ -1,11 +1,10 @@
 @{
-    ViewData["Title"] = "New Employee";
+    ViewData["Title"] = "Update Employee";
 }
-
 @model EmployeeProject.ViewModel.EmployeeViewModel;
 
 <div class="">
-    <form method="POST" asp-controller="Home" asp-action="NewEmployee">
+    <form method="POST" asp-controller="Home" asp-action="Update">
         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
         <span asp-validation-for="Employee.Name" class="text-danger"></span>
         <div class="form-group">
@@ -35,10 +34,3 @@
         <input class="form-control" type="submit">
     </form>
 </div>
-
-@section Scripts
-{
-@{
-    <partial name="_ValidationScriptsPartial" />
-}
-}
