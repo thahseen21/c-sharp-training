@@ -27,17 +27,40 @@ namespace EmployeeProject.Controllers
             this._db = db;
         }
 
-        [HttpGet]
-        public IActionResult Index()
+        // [HttpGet("{sortBy:string?}")]
+        public IActionResult Index([FromQuery(Name = "sortBy")] string sortBy)
         {
             IEnumerable<Employee> empList;
-            empList = _db.Employee.Where(item => item.IsActive == true);
+
+            // empList = _db.Employee.Where(item => item.IsActive == true);
+            switch (sortBy)
+            {
+                case "Id":
+                    empList =
+                        _db
+                            .Employee
+                            .Where(item => item.IsActive == true)
+                            .OrderBy(item => item.Id);
+                    break;
+                case "Name":
+                    empList = _db.Employee.Where(item => item.IsActive == true).OrderBy(item => item.Name);
+                    break;
+                case "Designation":
+                    empList = _db.Employee.Where(item => item.IsActive == true).OrderBy(item => item.Designation);
+                    break;
+                case "HireDate":
+                    empList = _db.Employee.Where(item => item.IsActive == true).OrderBy(item => item.HireDate);
+                    break;
+                default:
+                    empList = _db.Employee.Where(item => item.IsActive == true);
+                    break;
+            }
 
             return View(empList);
         }
 
         [HttpPost]
-        public IActionResult Index(string input)
+        public IActionResult Index()
         {
             var searchInput = Request.Form["search"];
             IEnumerable<Employee> empList;
@@ -119,14 +142,6 @@ namespace EmployeeProject.Controllers
             return View(empObj);
         }
 
-        // public Task<IActionResult> Search()
-        // {
-        //     var searchInput = Request.Form["search"];
-        //     if (searchInput.Length > 0)
-        //     {
-        //         return this.Index(searchInput);
-        //     }
-        // }
         [
             ResponseCache(
                 Duration = 0,
