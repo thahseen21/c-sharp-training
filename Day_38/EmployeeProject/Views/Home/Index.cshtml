@@ -2,24 +2,26 @@
     ViewData["Title"] = "Employee Details";
 }
 
-@model IEnumerable<EmployeeProject.Models.Implementation.Employee>
+@* @model IEnumerable<EmployeeProject.Models.Implementation.Employee> *@
+
+@model EmployeeProject.ViewModel.IndexPagination;
 
 <div class="text-center">
     <form method="POST" asp-controller="Home" asp-action="">
         <input type="text" name="search" id="search">
-        <input type="submit" value="search" >
+        <input type="submit" value="search">
     </form>
     <table class="table table-hover">
         <thead>
             <tr>
-                <th><a href="Home?sortBy=Id" >Id</a></th>
-                <th><a href="Home?sortBy=Name" >Name</a></th>
-                <th><a href="Home?sortBy=Designation" >Designation</a></th>
-                <th><a href="Home?sortBy=HireDate" >HireDate</a></th>
+                <th><a href="Home?sortBy=Id">Id</a></th>
+                <th><a href="Home?sortBy=Name">Name</a></th>
+                <th><a href="Home?sortBy=Designation">Designation</a></th>
+                <th><a href="Home?sortBy=HireDate">HireDate</a></th>
             </tr>
         </thead>
         <tbody>
-            @foreach (var item in Model)
+            @foreach (var item in Model.EmpList)
             {
                 <tr>
                     <td>@item.Id</td>
@@ -31,6 +33,17 @@
                     </td>
                 </tr>
             }
+
         </tbody>
     </table>
+    <nav aria-label="...">
+        <ul class="pagination pagination-sm">
+            @for (var i = 1; i <= Model.Pagination.TotalItems; i++)
+            {
+                <li class="page-item">
+                    <a class="page-link" asp-route-id="@i">@i</a>
+                </li>
+            }
+        </ul>
+    </nav>
 </div>

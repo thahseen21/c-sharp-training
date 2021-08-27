@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using EmployeeProject.Data;
 using EmployeeProject.Models;
 using EmployeeProject.Models.Implementation;
+using EmployeeProject.Utils;
 using EmployeeProject.ViewModel;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -28,35 +29,55 @@ namespace EmployeeProject.Controllers
         }
 
         // [HttpGet("{sortBy:string?}")]
-        public IActionResult Index([FromQuery(Name = "sortBy")] string sortBy)
+        public IActionResult
+        Index([FromQuery(Name = "sortBy")] string sortBy, int? id)
         {
-            IEnumerable<Employee> empList;
-
+            IndexPagination viewModel = new IndexPagination();
+    
             // empList = _db.Employee.Where(item => item.IsActive == true);
             switch (sortBy)
             {
                 case "Id":
-                    empList =
+                    viewModel.EmpList =
                         _db
                             .Employee
                             .Where(item => item.IsActive == true)
                             .OrderBy(item => item.Id);
                     break;
                 case "Name":
-                    empList = _db.Employee.Where(item => item.IsActive == true).OrderBy(item => item.Name);
+                    viewModel.EmpList =
+                        _db
+                            .Employee
+                            .Where(item => item.IsActive == true)
+                            .OrderBy(item => item.Name);
                     break;
                 case "Designation":
-                    empList = _db.Employee.Where(item => item.IsActive == true).OrderBy(item => item.Designation);
+                    viewModel.EmpList =
+                        _db
+                            .Employee
+                            .Where(item => item.IsActive == true)
+                            .OrderBy(item => item.Designation);
                     break;
                 case "HireDate":
-                    empList = _db.Employee.Where(item => item.IsActive == true).OrderBy(item => item.HireDate);
+                    viewModel.EmpList =
+                        _db
+                            .Employee
+                            .Where(item => item.IsActive == true)
+                            .OrderBy(item => item.HireDate);
                     break;
                 default:
-                    empList = _db.Employee.Where(item => item.IsActive == true);
+                    viewModel.EmpList = _db.Employee.Where(item => item.IsActive == true);
+                    // Pagination pg = new Pagination(viewModel.EmpList.Count());
+                    viewModel.Pagination = new Pagination(viewModel.EmpList.Count());
+                    if (id != null)
+                    {
+                        viewModel.Pagination.ChangePage((int) id);
+                    }
+                    viewModel.EmpList = viewModel.EmpList.Skip(viewModel.Pagination.From).Take(viewModel.Pagination.To);
                     break;
             }
 
-            return View(empList);
+            return View(viewModel);
         }
 
         [HttpPost]
