@@ -27,10 +27,39 @@ namespace EmployeeProject.Controllers
             this._db = db;
         }
 
+        [HttpGet]
         public IActionResult Index()
         {
-            IEnumerable<Employee> employeeList = _db.Employee;
-            return View(employeeList);
+            IEnumerable<Employee> empList;
+            empList = _db.Employee.Where(item => item.IsActive == true);
+
+            return View(empList);
+        }
+
+        [HttpPost]
+        public IActionResult Index(string input)
+        {
+            var searchInput = Request.Form["search"];
+            IEnumerable<Employee> empList;
+
+            Console.WriteLine($"{searchInput}");
+
+            if (searchInput.Count > 0)
+            {
+                empList =
+                    _db
+                        .Employee
+                        .Where(item =>
+                            item.Name.Contains(searchInput) &&
+                            item.IsActive == true);
+            }
+            else
+            {
+                empList = _db.Employee.Where(item => item.IsActive == true);
+            }
+
+            // empList = _db.Employee.Where(item => item.IsActive == true);
+            return View(empList);
         }
 
         public IActionResult Privacy()
@@ -90,6 +119,14 @@ namespace EmployeeProject.Controllers
             return View(empObj);
         }
 
+        // public Task<IActionResult> Search()
+        // {
+        //     var searchInput = Request.Form["search"];
+        //     if (searchInput.Length > 0)
+        //     {
+        //         return this.Index(searchInput);
+        //     }
+        // }
         [
             ResponseCache(
                 Duration = 0,
@@ -98,8 +135,7 @@ namespace EmployeeProject.Controllers
         ]
         public IActionResult Error()
         {
-            return View(new ErrorViewModel
-            {
+            return View(new ErrorViewModel {
                 RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier
             });
         }

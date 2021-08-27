@@ -5,10 +5,14 @@
 @model IEnumerable<EmployeeProject.Models.Implementation.Employee>
 
 <div class="text-center">
+    <form method="POST" asp-controller="Home" asp-action="">
+        <input type="text" name="search" id="search">
+        <input type="submit" value="search" >
+    </form>
     <table class="table table-hover">
         <thead>
             <tr>
-                <th>Id</th>
+                <th><a href="Home?sortBy=Id" >Id</a></th>
                 <th>Name</th>
                 <th>Designation</th>
                 <th>HireDate</th>
@@ -23,7 +27,7 @@
                     <td>@item.Designation</td>
                     <td>@item.HireDate</td>
                     <td>
-                         <a asp-action="Update" asp-route-id="@item.Id" class="btn btn-primary"> Update </a>
+                        <a asp-action="Update" asp-route-id="@item.Id" class="btn btn-primary"> Update </a>
                     </td>
                 </tr>
             }

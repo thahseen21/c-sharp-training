@@ -14,7 +14,10 @@ namespace EmployeeProject.Models.Implementation
 
         public Department Department { get; set; }
         public int DepartmentId { get; set; }
-
+    
         public DateTime HireDate { get; set; }
+
+        public bool IsActive { get; set; } = true;
+        
     }
 }
