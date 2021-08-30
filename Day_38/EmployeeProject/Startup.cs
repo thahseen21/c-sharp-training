@@ -2,14 +2,17 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using EmployeeProject.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.EntityFrameworkCore;
-using EmployeeProject.Data;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using EmployeeProject.Models.Implementation;
 
 namespace EmployeeProject
 {
@@ -26,7 +29,14 @@ namespace EmployeeProject
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            services.AddDbContext<ApplicationDbContext>(opt => opt.UseSqlServer(Configuration.GetConnectionString("DbConnection")));
+            services
+                .AddDbContext<ApplicationDbContext>(opt =>
+                    opt
+                        .UseSqlServer(Configuration
+                            .GetConnectionString("DbConnection")));
+            services
+                .AddIdentity<User, IdentityRole>()
+                .AddEntityFrameworkStores<ApplicationDbContext>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -39,6 +49,7 @@ namespace EmployeeProject
             else
             {
                 app.UseExceptionHandler("/Home/Error");
+
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
@@ -49,12 +60,13 @@ namespace EmployeeProject
 
             app.UseAuthorization();
 
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapControllerRoute(
-                    name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
-            });
+            app
+                .UseEndpoints(endpoints =>
+                {
+                    endpoints
+                        .MapControllerRoute(name: "default",
+                        pattern: "{controller=Home}/{action=Index}/{id?}");
+                });
         }
     }
 }

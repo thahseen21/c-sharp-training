@@ -149,3 +149,10 @@ C:/Users/mohammedthahseenn/Documents/c-sharp/Day_38/EmployeeProject/obj/Debug/ne
 /Users/mohammed/Documents/Thahseen/c-sharp/Day_38/EmployeeProject/obj/Debug/net5.0/ref/EmployeeProject.dll
 /Users/mohammed/Documents/Thahseen/c-sharp/Day_38/EmployeeProject/obj/Debug/net5.0/EmployeeProject.pdb
 /Users/mohammed/Documents/Thahseen/c-sharp/Day_38/EmployeeProject/obj/Debug/net5.0/EmployeeProject.genruntimeconfig.cache
+/Users/mohammed/Documents/Thahseen/c-sharp/Day_38/EmployeeProject/bin/Debug/net5.0/Microsoft.AspNetCore.Cryptography.Internal.dll
+/Users/mohammed/Documents/Thahseen/c-sharp/Day_38/EmployeeProject/bin/Debug/net5.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+/Users/mohammed/Documents/Thahseen/c-sharp/Day_38/EmployeeProject/bin/Debug/net5.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+/Users/mohammed/Documents/Thahseen/c-sharp/Day_38/EmployeeProject/bin/Debug/net5.0/Microsoft.Extensions.Identity.Core.dll
+/Users/mohammed/Documents/Thahseen/c-sharp/Day_38/EmployeeProject/bin/Debug/net5.0/Microsoft.Extensions.Identity.Stores.dll
+/Users/mohammed/Documents/Thahseen/c-sharp/Day_38/EmployeeProject/obj/Debug/net5.0/Razor/Views/Authentication/Login.cshtml.g.cs
+/Users/mohammed/Documents/Thahseen/c-sharp/Day_38/EmployeeProject/obj/Debug/net5.0/Razor/Views/Authentication/Register.cshtml.g.cs

@@ -33,47 +33,44 @@ namespace EmployeeProject.Controllers
         Index([FromQuery(Name = "sortBy")] string sortBy, int? id)
         {
             IndexPagination viewModel = new IndexPagination();
-    
-            // empList = _db.Employee.Where(item => item.IsActive == true);
+
+            viewModel.EmpList =
+                _db.Employee.Where(item => item.IsActive == true);
+
+            viewModel.Pagination = new Pagination(viewModel.EmpList.Count());
+
             switch (sortBy)
             {
                 case "Id":
                     viewModel.EmpList =
-                        _db
-                            .Employee
-                            .Where(item => item.IsActive == true)
-                            .OrderBy(item => item.Id);
+                        viewModel.EmpList.OrderBy(item => item.Id);
                     break;
                 case "Name":
                     viewModel.EmpList =
-                        _db
-                            .Employee
-                            .Where(item => item.IsActive == true)
-                            .OrderBy(item => item.Name);
+                        viewModel.EmpList.OrderBy(item => item.Name);
                     break;
                 case "Designation":
                     viewModel.EmpList =
-                        _db
-                            .Employee
-                            .Where(item => item.IsActive == true)
-                            .OrderBy(item => item.Designation);
+                        viewModel.EmpList.OrderBy(item => item.Designation);
                     break;
                 case "HireDate":
                     viewModel.EmpList =
-                        _db
-                            .Employee
-                            .Where(item => item.IsActive == true)
-                            .OrderBy(item => item.HireDate);
+                        viewModel.EmpList.OrderBy(item => item.HireDate);
                     break;
                 default:
-                    viewModel.EmpList = _db.Employee.Where(item => item.IsActive == true);
-                    // Pagination pg = new Pagination(viewModel.EmpList.Count());
-                    viewModel.Pagination = new Pagination(viewModel.EmpList.Count());
+                    viewModel.EmpList =
+                        _db.Employee.Where(item => item.IsActive == true);
+                    
+
                     if (id != null)
                     {
                         viewModel.Pagination.ChangePage((int) id);
                     }
-                    viewModel.EmpList = viewModel.EmpList.Skip(viewModel.Pagination.From).Take(viewModel.Pagination.To);
+                    viewModel.EmpList =
+                        viewModel
+                            .EmpList
+                            .Skip(viewModel.Pagination.From)
+                            .Take(viewModel.Pagination.To);
                     break;
             }
 

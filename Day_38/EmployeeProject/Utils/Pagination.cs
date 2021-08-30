@@ -22,6 +22,13 @@ namespace EmployeeProject.Utils
             this.To = this.PageSize;
         }
 
+        public void ResetPagination()
+        {
+            this.CurrentPage = 1;
+            this.From = 1;
+            this.To = this.PageSize;
+        }
+
         public void ChangePage(int page)
         {
             this.CurrentPage = page;

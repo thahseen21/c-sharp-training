@@ -15654,6 +15654,16 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/mohammed/Documents/Thahseen/c-sharp/Day_38/EmployeeProject/Views/Authentication/Register.cshtml",
+      "TargetPath": "Views\\Authentication\\Register.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/mohammed/Documents/Thahseen/c-sharp/Day_38/EmployeeProject/Views/Authentication/Login.cshtml",
+      "TargetPath": "Views\\Authentication\\Login.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/mohammed/Documents/Thahseen/c-sharp/Day_38/EmployeeProject/Views/Shared/_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
