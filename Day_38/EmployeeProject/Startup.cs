@@ -13,6 +13,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using EmployeeProject.Models.Implementation;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Http;
 
 namespace EmployeeProject
 {
@@ -37,6 +39,13 @@ namespace EmployeeProject
             services
                 .AddIdentity<User, IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>();
+
+            services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+                 .AddCookie(option =>
+                 {
+                     option.LoginPath = new PathString("/Auth/index");
+                     option.AccessDeniedPath = new PathString("/Auth/AccessDenied");
+                 });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -58,6 +67,7 @@ namespace EmployeeProject
 
             app.UseRouting();
 
+            // app.UseAuthentication();
             app.UseAuthorization();
 
             app

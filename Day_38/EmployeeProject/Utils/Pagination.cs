@@ -33,8 +33,6 @@ namespace EmployeeProject.Utils
         {
             this.CurrentPage = page;
             this.From = (this.CurrentPage - 1) * this.PageSize;
-
-            // this.To = this.CurrentPage * this.PageSize;
             this.To = this.PageSize;
         }
     }

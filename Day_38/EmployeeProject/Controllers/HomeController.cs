@@ -58,10 +58,6 @@ namespace EmployeeProject.Controllers
                         viewModel.EmpList.OrderBy(item => item.HireDate);
                     break;
                 default:
-                    viewModel.EmpList =
-                        _db.Employee.Where(item => item.IsActive == true);
-                    
-
                     if (id != null)
                     {
                         viewModel.Pagination.ChangePage((int) id);

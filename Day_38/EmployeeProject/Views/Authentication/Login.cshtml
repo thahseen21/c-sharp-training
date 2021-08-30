@@ -1,3 +1,21 @@
 @{
     ViewData["Title"] = "Add Department";
 }
+@model EmployeeProject.ViewModel.LoginViewModel;
+
+<div class="login-container">
+    <form method="POST" asp-action="login">
+    @* <form asp-action="Login" asp-controller="Login" method="POST" > *@
+        <div class="input-container">
+            <label for="UserName">Username</label>
+            <input type="text" class="form-control" asp-for="UserName">
+        </div>
+        <div class="input-container">
+            <label for="Password">Password</label>
+            <input type="text" class="form-control" asp-for="Password">
+        </div>
+        <div class="input-container">
+            <input type="submit" value="login" class="form-control">
+        </div>
+    </form>
+</div>
